@@ -1,6 +1,28 @@
 .App {
   text-align: center;
+  padding: 9rem;
+  height: 100vh;
+  background-color: #282c34;
 }
+
+.Grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  color: white;
+  width: max-content;
+  grid-gap: 0.3rem;
+  margin: auto;
+}
+
+.Cell {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid white;
+}
+
 
 .App-logo {
   height: 40vmin;
@@ -14,7 +36,6 @@
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -32,6 +53,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
